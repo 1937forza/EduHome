@@ -1,0 +1,17 @@
+﻿@model Board
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post" asp-action="create">
+    <div class="form-group">
+        <label asp-for="Desc">Desc</label>
+        <input class="form-control" asp-for="Desc" placeholder="Desc">
+    </div>
+    <div class="form-group">
+        <label asp-for="Date">Date</label>
+        <input class="form-control" asp-for="Date" placeholder="Desc">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
